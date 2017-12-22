@@ -55,7 +55,8 @@ scrapeIt({
             body: {
                 url: `https://www.instapaper.com${article.url}`,
                 cookies: instapaperCookies
-            }
+            },
+            wait: 60 // instapaper assets are slow... we don't want blank pdfs
         }).on('response', function (response) {
             if (response['headers']['content-disposition']) {
                 filename = slugify(article.title) + '.pdf'
