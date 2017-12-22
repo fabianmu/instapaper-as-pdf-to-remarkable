@@ -1,0 +1,18 @@
+{
+  "name": "instapaper-as-pdf-to-remarkable",
+  "version": "0.0.1",
+  "description": "Exports all URLS of articles as PDF files and potentially send them to a connected remarkable tablet ",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "request": "^2.83.0",
+    "scrape-it": "^4.1.0",
+    "slugify": "^1.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabian Mu",
+  "license": "ISC"
+}
