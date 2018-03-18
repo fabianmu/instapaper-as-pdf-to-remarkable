@@ -89,8 +89,8 @@ scrapeIt({
                     filename = `./pdfs/${slugify(article.title, {replacement: '-', remove: slugRemove, lower: true})}.pdf`
                     r.pipe(fs.createWriteStream(filename));
                     console.log(`stored ${filename}`)
-                    os.execCommand(`./rmapi put ${filename}`, function (returnvalue) {
-                        console.log(`uploaded ${filename}`)
+                    os.execCommand(`./rmapi put ${filename} /Instapaper`, function (returnvalue) {
+                        console.log(`uploaded ${filename} to /Instapaper`)
                     });
                 }
             })
